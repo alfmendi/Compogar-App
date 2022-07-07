@@ -219,6 +219,13 @@ const Linea = styled.div`
     color: var(--blanco);
     padding: 0.2rem 1rem;
   }
+
+  /* Media Query para dispositivos móviles */
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 const LineaInfo = styled.div`
@@ -257,7 +264,7 @@ const Imagen = styled.div`
 
   /* Media Query para dispositivos móviles */
   @media (max-width: 480px) {
-    width: 310px;
+    width: 100%;
     height: 200px;
   }
 `;

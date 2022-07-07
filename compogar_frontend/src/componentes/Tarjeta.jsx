@@ -101,7 +101,10 @@ const Tarjeta = ({ elemento }) => {
         </Ubicacion>
         <UbicacionMovil>
           <p>
-            <span>{elemento.tipoInmueble}</span> en {elemento.direccion}
+            <span>{elemento.tipoInmueble}</span> en{" "}
+            {`${elemento.direccion}`.length > 24
+              ? `${elemento.direccion}`.slice(0, 24) + "..."
+              : `${elemento.direccion}`}
           </p>
           <p>{elemento.localidad}</p>
         </UbicacionMovil>
